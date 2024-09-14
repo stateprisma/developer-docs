@@ -35,6 +35,24 @@ The current accepted types are:
 
 Commits should follow the known [Conventional commits](https://www.conventionalcommits.org/) convention. To ensure that your commit message follows the convention, please check it with [commitlint](https://commitlint.js.org/).
 
+#### Types and their meanings
+
+- `feat`: A new feature
+- `fix`: A bug fix
+- `chore`: Routine tasks (e.g., updating dependencies)
+- `docs`: Documentation changes
+- `style`: Code style changes (formatting, missing semi-colons, etc.)
+- `refactor`: Code changes that neither fix a bug nor add a feature
+- `test`: Adding or updating tests
+- `perf`: Performance improvements
+- `ci`: Changes to CI configuration files and scripts
+
+#### Scopes
+
+Scopes are used for specific parts/submodules of the codebase. In the case of this repository, a scope is the specific Markdown file that is being updated. Note: we are using mostly the `docs` type to describe changes in this repository.
+
+A scope might be a single file in small codebases, but usually it is a separate submodule. In the kernel repository, `vmm` or `acpi` would be a scope.
+
 ### Merging
 
 We use GitHub's rebase. Please ensure that each branch is only merged once this way. After merge, the branch should be deleted. This way we can keep our linear history clean. If you have trouble with rebasing, please let us know.
