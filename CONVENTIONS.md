@@ -21,14 +21,19 @@ Codenames that are not descriptive have to be accepted by a `Maintainer` first.
 
 Main branches are always called `main`. Please make sure you always keep that as your default branch for the repository.
 
+We use a branch naming strategy where the branch name begins with the type of the branch, then a slash followed by the brief description of the branch where words are separated with hyphens: `<type>/brief-description-of-branch`. The branch name should be all lowercase characters. Please avoid long git branchnames.
+
+The current accepted types are:
+
+- `feat`: New feature added to the project
+- `fix`: Fix of a bug or issue
+- `docs`: Addition or change of documentation
+- `exp`: Experiments
+- `devops`: Change in devops
+
 ### Commits
 
-Commits should be concise. They should start with capital letters and be imperative.
-
-Examples:
-
-- `Add framebuffer`
-- `Enhance memory allocator`
+Commits should follow the known [Conventional commits](https://www.conventionalcommits.org/) convention. To ensure that your commit message follows the convention, please check it with [commitlint](https://commitlint.js.org/).
 
 ### Merging
 
