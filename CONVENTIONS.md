@@ -53,6 +53,14 @@ Scopes are used for specific parts/submodules of the codebase. In the case of th
 
 A scope might be a single file in small codebases, but usually it is a separate submodule. In the kernel repository, `vmm` or `acpi` would be a scope.
 
+##### Subscopes
+
+If one scope is not enough, you can define subscopes with colons (`:`).
+
+Example:
+
+- feat(arm64:interrupts): correct CSV format in `apic.csv`
+
 ### Merging
 
 We use GitHub's rebase. Please ensure that each branch is only merged once this way. After merge, the branch should be deleted. This way we can keep our linear history clean. If you have trouble with rebasing, please let us know.
